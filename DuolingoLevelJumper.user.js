@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         Duolingo LJ VSC
-// @namespace    http://tampermonkey.net/
-// @version      3
-// @description  Local editing with VSCode
+// @name         Duolingo LevelJumper
+// @namespace    esh
+// @version      3.0
+// @description  Provides an menu to easy jump to the first lesson of a skill level (e.g. 3 crowns) and to the last learned level.
 // @match        https://*.duolingo.com/*
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @grant        GM_xmlhttpRequest
+// @license      MIT
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=duolingo.com
 // ==/UserScript==
 
