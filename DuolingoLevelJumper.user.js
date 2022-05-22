@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Duolingo LevelJumper
 // @namespace    esh
-// @version      3.0
+// @version      3.0.1
 // @description  Provides an menu to easy jump to the first lesson of a skill level (e.g. 3 crowns) and to the last learned level.
 // @match        https://*.duolingo.com/*
 // @grant        GM_getValue
@@ -10,7 +10,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=duolingo.com
 // ==/UserScript==
 
-const VERSION = '3.0';
+const VERSION = '3.0.1';
 const LOG_STRING = 'DuolingoLevelJumper ' + VERSION;
 const SKILL_QS = '[data-test="skill"]';
 const FLOATING_BUTTONS = '._1Hxe4';
@@ -39,9 +39,9 @@ function debug(s) {
   debug('MutationOberserver running');
 })();
 
-window.onload = function () {
+window.addEventListener('load', function () {
   autoScroll();
-}
+});
 
 // entry point for mutation observer
 function start() {
